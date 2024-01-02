@@ -1,0 +1,62 @@
+/**/
+:root{
+    --violeta: #900C3F;
+    --rojo: #C70039;
+    --naranja: #F94C10;
+    --amarillo: #F8DE22;
+    --blanco: #ffffff;
+}
+/*Hack para que se mire bien en cualquier pantalla, 1rem = 10px adaptados a los parametros que le dimos */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;;
+}
+
+header h1{
+    background: var(--violeta);
+    padding: 4rem;
+    margin: 0;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--amarillo);
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-bg{
+    background: var(--rojo);
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.navegacion-principal a:hover{
+    background: var(--naranja);
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+    }
+}

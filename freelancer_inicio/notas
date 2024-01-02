@@ -1,0 +1,29 @@
+*Agregar iconos
+Para buscar iconos puedo utilizar la pagina tablericons.com, y para paegarlos es solamente poner un parrafo <p> y pegar el link que copie de la pagina.
+
+*Agregar Formularios
+Para agregar un formulario, regristro, etc. Debo de usar el FORM esto hara que todo lo que agregue ahi lo tome como un formulario.
+Fieldset es una seccion del formulario
+Legend es para explicar de que va, puede ser el titulo
+
+<form action="">
+    <fieldset>
+        <legend>Contactanos llenando todos los campos.</legend>
+    </fieldset>
+</form>
+
+*CSS
+Para que la pagina carge mas rapido el CSS hay que poner la primer linea, la segunda es para la hoja de estilo en si. Poner siempre las dos.
+    <link rel="preload" href="css/style.css" as="style">
+    <link href="css/style.css" rel="stylesheet">
+
+*Hack para el tamaño de las letras
+La unidad que se usa para las letras es el REM, ya que es mucho mejor que utilizar pixles, pero necesita de un pequeño truco para que funcione perfecto el cual es el siguiente codigo que debe ir en el css
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
